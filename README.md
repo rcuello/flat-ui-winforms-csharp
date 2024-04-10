@@ -6,12 +6,15 @@ Es una aplicación academica en Winforms realizada en C# con la apariencia Flat-
 Hay 3 ventanas disponibles:
 
 **Inicio de sesión**
+
 ![alt text](.Documentacion/login.png)
 
 **Ventana principal**
+
 ![alt text](.Documentacion/principal.png)
 
 **Ventana dashboard**
+
 ![alt text](.Documentacion/dashboard.png)
 
 # 📋 Requerimientos
