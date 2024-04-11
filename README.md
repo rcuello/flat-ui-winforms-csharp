@@ -3,30 +3,34 @@ Es una aplicación academica en Winforms realizada en C# con la apariencia Flat-
 
 ## 🖼️ Interfaz grafica
 
-Hay 3 ventanas disponibles:
+Hay 3 formularios disponibles:
 
-**Inicio de sesión**
+**Formulario Inicio de sesión**
 
 ![alt text](.Documentacion/login.png)
 
-**Ventana principal**
+**Formulario principal**
 
 ![alt text](.Documentacion/principal.png)
 
-**Ventana dashboard**
+**Formulario dashboard**
 
 ![alt text](.Documentacion/dashboard.png)
 
 # 📋 Requerimientos
-* Net 8
-* Visual Studio Community 2022
+* [Net 8](https://dotnet.microsoft.com/es-es/download/dotnet/8.0)
+* [Visual Studio Community 2022](https://visualstudio.microsoft.com/es/vs/community/)
 
 # 🖌️ Paleta de colores
-1. Para la ventana principal:
+1. Para el formulario login:
+    - **Botón Ingresar** : #1e90ff [Dodger Blue](https://colorkit.co/color/1e90ff/)
+    - **Botón Cancelar** : #b22222 [Fire Brick](https://colorkit.co/color/b22222/)
+1. Para el formulario principal:
     - **Panel Lateral Menu** : #2C3A47 [Ships office](https://flatuicolors.com/palette/in)
     - **Panel Lateral Esquina** : #6D214F [Magenta purple](https://flatuicolors.com/palette/in)
 	- **Panel Encabezado** :  #B33771 [Fiery Fuchsia](https://flatuicolors.com/palette/in)
-1. Para la ventana dashboard:
+    - **Panel Contenido** :  #FFFFFF White
+1. Para el formulario dashboard:
 	- **Panel Producto** : #ffa502 [Orange](https://flatuicolors.com/palette/cn)
 	- **Panel Inventario** = #1B9CFC [Clear Chill](https://flatuicolors.com/palette/in)
 	- **Panel Bodega** = #58B19F [Keppel](https://flatuicolors.com/palette/in)
