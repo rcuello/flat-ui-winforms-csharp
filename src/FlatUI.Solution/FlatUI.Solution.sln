@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatUI.Presentacion", "Flat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capa.Entidad", "Capa.Entidad\Capa.Entidad.csproj", "{443F369B-16B0-425A-AE16-95A455FAF9B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa.Datos", "Capa.Datos\Capa.Datos.csproj", "{5BB929A3-ED2A-45DF-A9BA-421D0B4006F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Modelo", "1. Modelo", "{CBC5FE0D-C998-4030-ADBE-73461C368A2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. BaseDatos", "2. BaseDatos", "{2AA9D1DB-1EC2-4A22-9F09-D47521A58E78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Vistas", "3. Vistas", "{E8CDE929-4CCB-47C2-98DB-B7ECF3D846F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +29,18 @@ Global
 		{443F369B-16B0-425A-AE16-95A455FAF9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{443F369B-16B0-425A-AE16-95A455FAF9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{443F369B-16B0-425A-AE16-95A455FAF9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB929A3-ED2A-45DF-A9BA-421D0B4006F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB929A3-ED2A-45DF-A9BA-421D0B4006F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB929A3-ED2A-45DF-A9BA-421D0B4006F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB929A3-ED2A-45DF-A9BA-421D0B4006F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C74190D-774D-4A21-9BA1-DB4D988288A8} = {E8CDE929-4CCB-47C2-98DB-B7ECF3D846F8}
+		{443F369B-16B0-425A-AE16-95A455FAF9B4} = {CBC5FE0D-C998-4030-ADBE-73461C368A2D}
+		{5BB929A3-ED2A-45DF-A9BA-421D0B4006F0} = {2AA9D1DB-1EC2-4A22-9F09-D47521A58E78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD20DE44-C41B-4B37-9510-4AA57E6BDFAA}
