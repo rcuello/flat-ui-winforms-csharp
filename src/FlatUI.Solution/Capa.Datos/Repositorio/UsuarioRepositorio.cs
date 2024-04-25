@@ -1,4 +1,5 @@
 ﻿using Capa.Entidad;
+using Microsoft.Data.SqlClient;
 
 namespace Capa.Datos.Repositorio
 {
@@ -6,6 +7,10 @@ namespace Capa.Datos.Repositorio
     {
         public Usuario Autenticar(string nombreUsuario,string clave)
         {
+            using(var conexion = new SqlConnection("")) 
+            {
+                
+            }
 
             return null;
         }
