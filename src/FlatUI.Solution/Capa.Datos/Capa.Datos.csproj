@@ -11,4 +11,8 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Capa.Entidad\Capa.Entidad.csproj" />
+  </ItemGroup>
+
 </Project>
