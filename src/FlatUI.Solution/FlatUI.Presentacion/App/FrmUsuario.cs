@@ -19,8 +19,27 @@ namespace FlatUI.Presentacion.App
         {
             InitializeComponent();
             this.m_usuarioRepositorio = new UsuarioRepositorio();
+
+            this.CargarUsuarios();
         }
 
+        private void CargarUsuarios()
+        {
+            var listaUsuarios = m_usuarioRepositorio.GetUsuarios();
+
+            foreach(var usuario in  listaUsuarios) 
+            {
+                object[] fila = new object[]
+                {
+                    usuario.IdUsuario,
+                    usuario.NombreUsuario,
+                    usuario.NombreCompleto,
+                    usuario.Correo
+                };
+
+                dgUsuarios.Rows.Add(fila);
+            }
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             var username = this.txtUsername.Text;

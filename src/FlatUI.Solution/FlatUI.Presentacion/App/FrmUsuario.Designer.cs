@@ -41,7 +41,13 @@
             txtUsername = new TextBox();
             label1 = new Label();
             label6 = new Label();
+            dgUsuarios = new DataGridView();
+            IdUsuario = new DataGridViewTextBoxColumn();
+            Usuario = new DataGridViewTextBoxColumn();
+            NombreCompleto = new DataGridViewTextBoxColumn();
+            Correo = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgUsuarios).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -172,11 +178,50 @@
             label6.Text = "Lista de Usuarios";
             label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // dgUsuarios
+            // 
+            dgUsuarios.AllowUserToAddRows = false;
+            dgUsuarios.AllowUserToDeleteRows = false;
+            dgUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgUsuarios.Columns.AddRange(new DataGridViewColumn[] { IdUsuario, Usuario, NombreCompleto, Correo });
+            dgUsuarios.Dock = DockStyle.Bottom;
+            dgUsuarios.Location = new Point(211, 115);
+            dgUsuarios.Name = "dgUsuarios";
+            dgUsuarios.ReadOnly = true;
+            dgUsuarios.Size = new Size(765, 498);
+            dgUsuarios.TabIndex = 2;
+            // 
+            // IdUsuario
+            // 
+            IdUsuario.HeaderText = "IdUsuario";
+            IdUsuario.Name = "IdUsuario";
+            IdUsuario.ReadOnly = true;
+            IdUsuario.Visible = false;
+            // 
+            // Usuario
+            // 
+            Usuario.HeaderText = "Usuario";
+            Usuario.Name = "Usuario";
+            Usuario.ReadOnly = true;
+            // 
+            // NombreCompleto
+            // 
+            NombreCompleto.HeaderText = "Nombre Completo";
+            NombreCompleto.Name = "NombreCompleto";
+            NombreCompleto.ReadOnly = true;
+            // 
+            // Correo
+            // 
+            Correo.HeaderText = "Correo";
+            Correo.Name = "Correo";
+            Correo.ReadOnly = true;
+            // 
             // FrmUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(976, 613);
+            Controls.Add(dgUsuarios);
             Controls.Add(label6);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -184,6 +229,7 @@
             Text = "FrmUsuario";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgUsuarios).EndInit();
             ResumeLayout(false);
         }
 
@@ -202,5 +248,10 @@
         private TextBox txtUsername;
         private Button btnGuardar;
         private Label label6;
+        private DataGridView dgUsuarios;
+        private DataGridViewTextBoxColumn IdUsuario;
+        private DataGridViewTextBoxColumn Usuario;
+        private DataGridViewTextBoxColumn NombreCompleto;
+        private DataGridViewTextBoxColumn Correo;
     }
 }
