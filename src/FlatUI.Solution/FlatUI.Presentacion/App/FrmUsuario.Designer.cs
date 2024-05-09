@@ -30,15 +30,15 @@
         {
             panel1 = new Panel();
             btnGuardar = new Button();
-            textBox5 = new TextBox();
+            txtPassword2 = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            txtPassword1 = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            txtCorreo = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            txtNombreCompleto = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtUsername = new TextBox();
             label1 = new Label();
             label6 = new Label();
             panel1.SuspendLayout();
@@ -48,15 +48,15 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(btnGuardar);
-            panel1.Controls.Add(textBox5);
+            panel1.Controls.Add(txtPassword2);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(txtPassword1);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(txtCorreo);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(txtNombreCompleto);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtUsername);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -78,13 +78,13 @@
             btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
-            // textBox5
+            // txtPassword2
             // 
-            textBox5.Location = new Point(14, 298);
-            textBox5.Name = "textBox5";
-            textBox5.PasswordChar = '*';
-            textBox5.Size = new Size(177, 23);
-            textBox5.TabIndex = 9;
+            txtPassword2.Location = new Point(14, 298);
+            txtPassword2.Name = "txtPassword2";
+            txtPassword2.PasswordChar = '*';
+            txtPassword2.Size = new Size(177, 23);
+            txtPassword2.TabIndex = 9;
             // 
             // label5
             // 
@@ -95,13 +95,13 @@
             label5.TabIndex = 8;
             label5.Text = "Confirma Contraseña:";
             // 
-            // textBox4
+            // txtPassword1
             // 
-            textBox4.Location = new Point(14, 230);
-            textBox4.Name = "textBox4";
-            textBox4.PasswordChar = '*';
-            textBox4.Size = new Size(177, 23);
-            textBox4.TabIndex = 7;
+            txtPassword1.Location = new Point(14, 230);
+            txtPassword1.Name = "txtPassword1";
+            txtPassword1.PasswordChar = '*';
+            txtPassword1.Size = new Size(177, 23);
+            txtPassword1.TabIndex = 7;
             // 
             // label4
             // 
@@ -112,12 +112,12 @@
             label4.TabIndex = 6;
             label4.Text = "Contraseña:";
             // 
-            // textBox3
+            // txtCorreo
             // 
-            textBox3.Location = new Point(12, 171);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(177, 23);
-            textBox3.TabIndex = 5;
+            txtCorreo.Location = new Point(12, 171);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(177, 23);
+            txtCorreo.TabIndex = 5;
             // 
             // label3
             // 
@@ -128,12 +128,12 @@
             label3.TabIndex = 4;
             label3.Text = "Correo:";
             // 
-            // textBox2
+            // txtNombreCompleto
             // 
-            textBox2.Location = new Point(12, 115);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(177, 23);
-            textBox2.TabIndex = 3;
+            txtNombreCompleto.Location = new Point(12, 115);
+            txtNombreCompleto.Name = "txtNombreCompleto";
+            txtNombreCompleto.Size = new Size(177, 23);
+            txtNombreCompleto.TabIndex = 3;
             // 
             // label2
             // 
@@ -144,12 +144,12 @@
             label2.TabIndex = 2;
             label2.Text = "Nombre Completo:";
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Location = new Point(12, 63);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(177, 23);
-            textBox1.TabIndex = 1;
+            txtUsername.Location = new Point(12, 63);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(177, 23);
+            txtUsername.TabIndex = 1;
             // 
             // label1
             // 
@@ -191,15 +191,15 @@
 
         private Panel panel1;
         private Label label1;
-        private TextBox textBox5;
+        private TextBox txtPassword2;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox txtPassword1;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtCorreo;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txtNombreCompleto;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtUsername;
         private Button btnGuardar;
         private Label label6;
     }

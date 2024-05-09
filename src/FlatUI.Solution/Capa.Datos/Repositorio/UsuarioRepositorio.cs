@@ -6,6 +6,28 @@ namespace Capa.Datos.Repositorio
 {
     public class UsuarioRepositorio
     {
+
+        public void GuardarUsuario(Usuario usuario)
+        {
+            var cadenaConexion = ConfigurationManager.ConnectionStrings["CadenaConexion"].ToString();
+
+            using(var conexion = new SqlConnection(cadenaConexion)) 
+            {
+                conexion.Open();
+
+                var sql = "INSERT INTO [Usuarios]([Usuario],[NombreCompleto],[Correo],[Clave],[Estado],[FechaRegistro]) VALUES (@username,@nombreCompleto,@correo ,@clave,@estado,@fechaRegistro)";
+                SqlCommand comando = new SqlCommand(sql, conexion);
+                comando.Parameters.AddWithValue("@username", usuario.NombreUsuario);
+                comando.Parameters.AddWithValue("@nombreCompleto", usuario.NombreCompleto);
+                comando.Parameters.AddWithValue("@correo", usuario.Correo);
+                comando.Parameters.AddWithValue("@clave", usuario.Clave);
+                comando.Parameters.AddWithValue("@estado", true);
+                comando.Parameters.AddWithValue("@fechaRegistro", DateTime.Now);
+
+                comando.ExecuteNonQuery();
+            }
+        }
+
         public Usuario Autenticar(string nombreUsuario,string clave)
         {
             var cadenaConexion = ConfigurationManager.ConnectionStrings["CadenaConexion"].ToString();
