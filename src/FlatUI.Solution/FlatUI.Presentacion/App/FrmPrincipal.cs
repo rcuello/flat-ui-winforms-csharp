@@ -41,6 +41,7 @@ namespace FlatUI.Presentacion
         {
             var frmDashboard = new FrmDashboard();
             frmDashboard.TopLevel = false;
+            panelContent.Controls.Clear();
             panelContent.Controls.Add(frmDashboard);
             frmDashboard.BringToFront();
             frmDashboard.Show();
@@ -50,6 +51,16 @@ namespace FlatUI.Presentacion
         {
             //Application.Exit();
             this.Close();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            var frmUsuario = new FrmUsuario();
+            frmUsuario.TopLevel = false;
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(frmUsuario);
+            frmUsuario.BringToFront();
+            frmUsuario.Show();
         }
     }
 }

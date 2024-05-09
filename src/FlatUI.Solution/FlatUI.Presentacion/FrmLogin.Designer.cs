@@ -151,6 +151,7 @@
             txtClave.PasswordChar = '*';
             txtClave.Size = new Size(222, 23);
             txtClave.TabIndex = 7;
+            txtClave.Text = "T3scuel4$%$";
             // 
             // lbUsername
             // 
@@ -168,6 +169,7 @@
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(222, 23);
             txtUsuario.TabIndex = 4;
+            txtUsuario.Text = "admin";
             // 
             // label1
             // 

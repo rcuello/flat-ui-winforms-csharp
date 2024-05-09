@@ -42,6 +42,7 @@
             panelHeader = new Panel();
             btnClose = new Button();
             panelContent = new Panel();
+            btnUsuarios = new Button();
             panelLateral.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -51,6 +52,7 @@
             // panelLateral
             // 
             panelLateral.BackColor = Color.FromArgb(44, 58, 71);
+            panelLateral.Controls.Add(btnUsuarios);
             panelLateral.Controls.Add(btnSalir);
             panelLateral.Controls.Add(btnConfiguracion);
             panelLateral.Controls.Add(btnReportes);
@@ -267,7 +269,28 @@
             panelContent.Size = new Size(998, 529);
             panelContent.TabIndex = 2;
             // 
-            // FrmMain
+            // btnUsuarios
+            // 
+            btnUsuarios.Cursor = Cursors.Hand;
+            btnUsuarios.Dock = DockStyle.Top;
+            btnUsuarios.FlatAppearance.BorderSize = 0;
+            btnUsuarios.FlatAppearance.MouseOverBackColor = Color.FromArgb(179, 55, 113);
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.ForeColor = Color.FromArgb(224, 224, 224);
+            btnUsuarios.Image = Properties.Resources.settings_16;
+            btnUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsuarios.Location = new Point(0, 324);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Padding = new Padding(5, 0, 0, 0);
+            btnUsuarios.Size = new Size(186, 32);
+            btnUsuarios.TabIndex = 9;
+            btnUsuarios.Text = "  Usuarios";
+            btnUsuarios.TextAlign = ContentAlignment.MiddleLeft;
+            btnUsuarios.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnUsuarios.UseVisualStyleBackColor = true;
+            btnUsuarios.Click += btnUsuarios_Click;
+            // 
+            // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -278,7 +301,7 @@
             Controls.Add(panelLateral);
             Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "FrmMain";
+            Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             panelLateral.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -303,5 +326,6 @@
         private PictureBox pictureBox1;
         private Button btnClose;
         private Panel panelContent;
+        private Button btnUsuarios;
     }
 }
